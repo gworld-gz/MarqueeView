@@ -1,0 +1,13 @@
+.gradle
+build
+/local.properties
+/.idea
+/build
+/captures
+*/bin
+*.apk
+*.iml
+.idea
+output.json
+*.bat
+*.hprof
