@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarqueeViewStyle">
+        <!--        动画间隔时间-->
+        <attr name="mvInterval" format="integer|reference"/>
+        <!--        动画持续时间-->
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <!--        是否单行显示-->
+        <attr name="mvSingleLine" format="boolean"/>
+        <!--        字体-->
+        <attr name="mvFont" format="reference"/>
+        <!--        文本对齐方式-->
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <!--        滚动方向设置-->
+        <attr name="mvDirection">
+            <!--        底部->顶部 滚动-->
+            <enum name="bottom_to_top" value="0"/>
+            <!--        顶部->底部 滚动-->
+            <enum name="top_to_bottom" value="1"/>
+            <!--        右->左 滚动-->
+            <enum name="right_to_left" value="2"/>
+            <!--        左->右 滚动-->
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
