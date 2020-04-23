@@ -20,6 +20,9 @@ public class MarqueeViewTestActivity extends Activity {
     private List<CustomModel> mCustomList;
     MarqueeView marqueeView;
 
+    RecyclerView recyclerView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,9 @@ public class MarqueeViewTestActivity extends Activity {
     private void initView() {
         setContentView(R.layout.fragment_tab);
         marqueeView = findViewById(R.id.marqueeView);
-
+        recyclerView = findViewById(R.id.recycler);
+        recyclerView.setAdapter(new Adapter());
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     /**
