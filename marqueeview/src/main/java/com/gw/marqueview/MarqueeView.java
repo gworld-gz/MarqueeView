@@ -224,6 +224,8 @@ public class MarqueeView<T> extends ViewFlipper {
         if (messages.size() > 1) {
             setInAndOutAnimation(inAnimResId, outAnimResID);
             startFlipping();
+        }else {
+            stopFlipping();
         }
         if (getInAnimation() != null) {
             getInAnimation().setAnimationListener(new Animation.AnimationListener() {
